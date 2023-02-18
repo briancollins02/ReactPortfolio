@@ -1,0 +1,71 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body {
+    font-size: 16px;
+}
+
+.content-container {
+    width: 100vw;
+    height: max-content;
+    margin: 0px auto;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-container {
+    width: 20rem;
+    height: 15.5rem;
+    background-color: lightskyblue;
+    padding: .5rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
+}
+
+.github-logo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 0 1.2rem 0 0
+}
+.link-container {
+    margin: .6rem 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    overflow: hidden;
+}
+.link-container * {
+    margin: 0rem 0rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.image-container {
+    width: 20rem;
+    height: 12rem;
+    outline-style: solid;
+    outline-color: lightskyblue;
+    outline-width: .5rem;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-color: blue;
+}
+
+.project-img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
