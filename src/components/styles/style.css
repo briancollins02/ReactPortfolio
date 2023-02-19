@@ -1,9 +1,20 @@
 * {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
 }
 
 body {
     font-size: 16px;
+}
+
+.divider {
+    width: 80vw;
+    margin: auto;
+    height: .25rem;
+    color: lightskyblue;
+    background-color: lightskyblue;
+    border-radius: .5rem;
+    margin: 2rem auto;
 }
 
 .content-container {
@@ -11,6 +22,40 @@ body {
     height: max-content;
     margin: 0px auto;
     align-self: center;
+}
+
+/* header */
+.header {
+    display: flex;
+    margin: 1rem auto 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 3rem;
+    width: 80vw;
+    align-items: start;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 1rem;
+}
+
+.nav-tabs li {
+    font-size: 2rem;
+    margin: 0 2rem;
+    text-decoration: underline;
+}
+
+/* portfolio-page */
+
+.portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,4 +113,96 @@ a {
 .project-img {
     max-width: 100%;
     border-radius: 1rem;
+}
+
+/* contact-page */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+#contact-header {
+    margin: 0rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#message-input {
+    display: flex;
+    height: 10rem;
+    text-align: start;
+    justify-content: start;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.name-email-input {
+    margin: 1rem;
+    border-radius: .5rem;
+    padding: .125rem;
+    text-align: center;
+}
+
+#contact-submit-button {
+    margin: .5rem auto;
+    width: min-content;
+    border-radius: .5rem;
+    background-color: lightskyblue;
+    color: rgb(255, 255, 255);
+    border-color: black;
+
+}
+
+#error-text {
+    height: 1rem;
+}
+
+.footer {
+    width: 60vw;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer ul li {
+    margin: 0px;
+}
+
+/* about-page */
+.about {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.avatar {
+    height: 7rem;
+    width: 7drem;
+    border-radius: 50%;
+}
+
+/* rsume-page */
+.resume {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.download-link {
+    color: blue;
+    text-decoration: underline;
 }

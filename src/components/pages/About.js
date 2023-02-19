@@ -2,9 +2,10 @@ import React from 'react';
 
 export default function About() {
     return (
-        <div>
-            <h1>About</h1>
-            <img></img>
+        <div className='content-container about'>
+            
+            <img className='avatar' src={process.env.PUBLIC_URL + "/images/avatar.jpeg"} />
+
             <p>
                 short Bio
             </p>
