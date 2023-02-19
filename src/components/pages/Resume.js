@@ -3,7 +3,7 @@ import React from 'react';
 export default function Resume() {
     return (
         <div className='content-container resume'>
-            <h2>Proficiencies</h2>
+            <h2>Technologies</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
