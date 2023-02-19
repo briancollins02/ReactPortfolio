@@ -64,7 +64,7 @@ body {
 
 .project-container {
     width: 20rem;
-    height: 15.5rem;
+    height: 14rem;
     background-color: lightskyblue;
     padding: .5rem;
     border-radius: 1.5rem;
@@ -101,7 +101,7 @@ a {
 
 .image-container {
     width: 20rem;
-    height: 12rem;
+    height: 10rem;
     outline-style: solid;
     outline-color: lightskyblue;
     outline-width: .5rem;
@@ -188,12 +188,20 @@ a {
 .about {
     width: 80vw;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .avatar {
     height: 7rem;
     width: 7drem;
     border-radius: 50%;
+}
+
+.about p {
+    font-size: 1.5rem;
+    width: 50%
 }
 
 /* rsume-page */
