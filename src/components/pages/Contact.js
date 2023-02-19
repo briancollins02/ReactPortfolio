@@ -71,21 +71,24 @@ function Contact() {
       };
 
     return (
-        <div>
+        <div className='content-container contact'>
+            <h2 id='contact-header'>Inquiries</h2>
             {/* contact form */}
             <form id='contact-form'>
-                {/* name input */}
-                <input id='name-input' className='name-and-email-input' value={name} name='name' onChange={handleInputChange} type="text" placeholder="Name" onBlur={handleInputChange} />
-                {/* email input */}
-                <input id='email-input' className='name-email-input' value={email} name='email' onChange={handleInputChange} type='text' placeholder='Email' onBlur={checkInputChange} />
+                <div className='field-container'>
+                    {/* name input */}
+                    <input id='name-input' className='name-email-input' value={name} name='name' onChange={handleInputChange} type="text" placeholder="Name" onBlur={handleInputChange} autoComplete='off' />
+                    {/* email input */}
+                    <input id='email-input' className='name-email-input' value={email} name='email' onChange={handleInputChange} type='text' placeholder='Email' onBlur={checkInputChange} autoComplete='off' />
+                </div>
                 {/* message input */}
-                <input id='message-input' value={message} name='message' onChange={handleInputChange} type='text' placeholder='Type your message here' onBlur={checkInputChange} />
+                <textarea id='message-input' value={message} name='message' onChange={handleInputChange} type='text' placeholder='Type your message here' onBlur={checkInputChange} />
                 {/* submit button */}
-                <button className="contact-submit-button" type="button" onClick={handleFormSubmit}>Submit</button>
+                <button id="contact-submit-button" type="button" onClick={handleFormSubmit}>Send</button>
             </form>
              {errorMessage && (
                 <div>
-                    <p className="error-text">{errorMessage}</p>
+                    <p id="error-text">{errorMessage}</p>
                 </div>
             )}
         </div>

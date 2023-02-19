@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 
 function Header({currentPage, handlePageChange}) {
     return (
+      <div className='header'>
+        <h1>Brian C</h1>
         <ul className="nav nav-tabs">
           <li className="nav-item">
             <a
@@ -47,6 +49,8 @@ function Header({currentPage, handlePageChange}) {
             </a>
           </li>
         </ul>
+      </div>
+      
       );
 }
 

@@ -4,7 +4,7 @@ export default function Portfolio() {
     return (
         <div>
             <main>
-                <div class='content-container'>
+                <div class='content-container portfolio'>
                     <div className="project-container">
                         <div class='image-container'>
                             <img className="project-img" src={process.env.PUBLIC_URL + "/images/NoteTaker.png"} alt="Note-Taker Application" />
